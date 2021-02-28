@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -20,9 +20,9 @@
         WebGL builds are not supported on mobile devices.
       </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Shoot Condor</div>
+          <div id="unity-webgl-logo"></div>
+          <!--<div id="unity-fullscreen-button"></div>-->
+          <div id="unity-build-title">Shoot Condor</div>
       </div>
     </div>
     <script>
@@ -66,7 +66,7 @@
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
+            //unityInstance.SetFullscreen(1);
           };
         }).catch((message) => {
           alert(message);
